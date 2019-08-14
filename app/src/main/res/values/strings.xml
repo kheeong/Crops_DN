@@ -2,4 +2,13 @@
     <string name="app_name">dn2019</string>
     <string name="refresh">refresh</string>
     <string name="stop">stop</string>
+    <string name="title_activity_main_page_beta">main_page_beta</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Price">price</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">login</string>
 </resources>
