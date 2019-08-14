@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item android:id="@+id/Market"
-            android:title="@string/refresh"
-            android:icon="@drawable/ic_action_refresh" />
+            android:title="Market"
+            android:icon="@drawable/ic_shopping_cart_black_24dp" />
         <item android:id="@+id/Price"
-            android:title="@string/stop"
+            android:title="Prices"
             android:icon="@drawable/ic_attach_money" />
 
     </group>
