@@ -11,16 +11,16 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.RelativeLayout;
+
 public class Main_page extends AppCompatActivity {
-    private RelativeLayout layout;
+
     private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
-        layout = (RelativeLayout) findViewById(R.id.drawer_layout);
+
         configureNavigationDrawer();
         configureToolbar();
     }
