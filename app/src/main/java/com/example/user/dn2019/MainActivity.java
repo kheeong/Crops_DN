@@ -25,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
                 EditText username = findViewById(R.id.Username);
                 String user = username.getText().toString();
                 String pass = password.getText().toString();
-                Intent intent = new Intent(MainActivity.this,Main_page.class);
-                startActivity(intent);
-                if(user == "" && pass == ""){
 
+                if(user == "" && pass == ""){
+                    Intent intent = new Intent(MainActivity.this,Main_page.class);
+                    startActivity(intent);
                 }
                 else{
-                    Toast.makeText(getBaseContext(),user,Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(),"Inccorrect Username or Password",Toast.LENGTH_LONG).show();
                 }
             }
         });
