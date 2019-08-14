@@ -14,22 +14,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final EditText username = findViewById(R.id.Username);
-        final EditText password = findViewById(R.id.Password);
+
+
         Button button = findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                EditText password = findViewById(R.id.Password);
+                EditText username = findViewById(R.id.Username);
                 String user = username.getText().toString();
                 String pass = password.getText().toString();
+                Intent intent = new Intent(MainActivity.this,Main_page.class);
+                startActivity(intent);
+                if(user == "" && pass == ""){
 
-                if(user == "one" && pass == "1"){
-                    Intent intent = new Intent(MainActivity.this,Main_page.class);
-                    startActivity(intent);
                 }
                 else{
-                    Toast.makeText(getBaseContext(),"Incorrect Password or Username",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(),user,Toast.LENGTH_LONG).show();
                 }
             }
         });
