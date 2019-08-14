@@ -47,9 +47,9 @@ public class Main_page extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 Fragment f = null;
                 int itemId = menuItem.getItemId();
-                if (itemId == R.id.refresh) {
+                if (itemId == R.id.Market) {
                     f = new RefreshFragment();
-                } else if (itemId == R.id.stop) {
+                } else if (itemId == R.id.Price) {
                     f = new StopFragment();
                 }
                 if (f != null) {
