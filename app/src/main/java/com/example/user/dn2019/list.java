@@ -61,7 +61,8 @@ public class list extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 int o = position;//As you are using Default String Adapter
                 Toast.makeText(getBaseContext(),listviewShortDescription[o],Toast.LENGTH_SHORT).show();
-
+                Intent intent = new Intent(list.this,Detaul.class);
+                startActivity(intent);
             }
         });
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
