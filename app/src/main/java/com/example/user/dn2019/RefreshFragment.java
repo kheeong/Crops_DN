@@ -1,5 +1,6 @@
 package com.example.user.dn2019;
 
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 public class RefreshFragment extends Fragment {
     Button button,button2,button3,button4,button5,button6;
     int num;
@@ -25,6 +25,7 @@ public class RefreshFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ((cart_variable)getActivity().getApplication()).settype("Watermelon");
                 Intent intent = new Intent(getContext(), list.class);
                 startActivity(intent);
             }
@@ -32,6 +33,7 @@ public class RefreshFragment extends Fragment {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ((cart_variable)getActivity().getApplication()).settype("Tomato");
                 Intent intent = new Intent(getContext(), list.class);
                 startActivity(intent);
             }
@@ -39,6 +41,7 @@ public class RefreshFragment extends Fragment {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ((cart_variable)getActivity().getApplication()).settype("Orange");
                 Intent intent = new Intent(getContext(), list.class);
                 startActivity(intent);
             }
@@ -46,6 +49,7 @@ public class RefreshFragment extends Fragment {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ((cart_variable)getActivity().getApplication()).settype("Pineapple");
                 Intent intent = new Intent(getContext(), list.class);
                 startActivity(intent);
             }
@@ -53,6 +57,7 @@ public class RefreshFragment extends Fragment {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ((cart_variable)getActivity().getApplication()).settype("Watermelon");
                 Intent intent = new Intent(getContext(), list.class);
                 startActivity(intent);
             }
@@ -60,6 +65,7 @@ public class RefreshFragment extends Fragment {
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ((cart_variable)getActivity().getApplication()).settype("Lemon");
                 Intent intent = new Intent(getContext(), list.class);
                 startActivity(intent);
             }

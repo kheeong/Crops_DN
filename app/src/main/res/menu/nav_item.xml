@@ -3,11 +3,12 @@
     <group android:checkableBehavior="single">
         <item android:id="@+id/Market"
             android:title="Market"
-            android:icon="@drawable/ic_shopping_cart_black_24dp" />
+            android:icon="@drawable/ic_shopping_basket_black_24dp" />
         <item android:id="@+id/Price"
             android:title="Prices"
             android:icon="@drawable/ic_attach_money" />
-        <item android:title="Cart"
+        <item android:title="My Cart"
+            android:id="@+id/cart_menu"
             android:icon="@drawable/ic_shopping_cart_black_24dp"/>
     </group>
 </menu>
