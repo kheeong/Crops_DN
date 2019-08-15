@@ -53,7 +53,8 @@ public class Detaul extends AppCompatActivity {
         Acart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                num = ((cart_variable) getBaseContext()).getLen();
+                Toast.makeText(Detaul.this,num,Toast.LENGTH_SHORT).show();
             }
         });
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {

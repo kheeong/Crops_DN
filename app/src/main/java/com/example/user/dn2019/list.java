@@ -19,7 +19,7 @@ import java.util.List;
 public class list extends AppCompatActivity {
     Toolbar mToolbar;
     // Array of strings for ListView Title
-    ArrayList<String> listviewTitle;
+    ArrayList<String> listviewTitle = new ArrayList<>();
     ArrayList<Integer> listviewImage = new ArrayList<>();
     ArrayList<String> listviewShoetDescription = new ArrayList<>();
 

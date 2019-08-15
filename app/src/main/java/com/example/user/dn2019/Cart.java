@@ -15,7 +15,7 @@ import java.util.List;
 
 public class Cart extends Fragment {
     // Array of strings for ListView Title
-    ArrayList<String> listviewTitle = new ArrayList<>();
+    ArrayList<String> listviewTitle;
     ArrayList<Integer> listviewImage = new ArrayList<>();
     ArrayList<String> listviewShoetDescription = new ArrayList<>();
     int size;
