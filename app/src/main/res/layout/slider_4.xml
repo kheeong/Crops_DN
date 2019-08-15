@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Traveling"
+        android:text="Received"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="30dp"
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Easy traveling to anywhere!"
+        android:text="Time to start the process of cooking"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="20dp" />
