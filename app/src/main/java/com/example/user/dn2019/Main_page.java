@@ -54,6 +54,8 @@ public class Main_page extends AppCompatActivity {
                     f = new RefreshFragment();
                 } else if (itemId == R.id.Price) {
                     f = new StopFragment();
+                } else if(itemId == R.id.Cart){
+
                 }
                 if (f != null) {
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();

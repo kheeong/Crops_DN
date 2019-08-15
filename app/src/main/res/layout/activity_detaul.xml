@@ -2,30 +2,12 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#BCCEE1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Detaul">
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="58dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="@+id/minueus"
-        app:layout_constraintEnd_toEndOf="@+id/minueus"
-        app:layout_constraintStart_toStartOf="@+id/minueus"
-        app:layout_constraintTop_toTopOf="@+id/minueus"
-        app:srcCompat="@drawable/ic_remove_black_24dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="58dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="@+id/plus"
-        app:layout_constraintEnd_toEndOf="@+id/plus"
-        app:layout_constraintStart_toStartOf="@+id/plus"
-        app:layout_constraintTop_toTopOf="@+id/plus"
-        app:srcCompat="@drawable/ic_add_black_24dp" />
+    <include layout="@layout/toolbar" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -41,7 +23,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.052"
-        app:srcCompat="@drawable/ic_shopping_cart_black_24dp" />
+        android:src="@drawable/ic_add_shopping_cart_black_24dp"
+        />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -56,7 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@drawable/ic_launcher_background" />
+        tools:src="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textView2"
@@ -86,10 +69,10 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.046" />
 
     <Button
         android:id="@+id/Cart"
@@ -105,43 +88,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.393" />
+        app:layout_constraintVertical_bias="0.498" />
 
-    <Button
-        android:id="@+id/plus"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
-        app:layout_constraintStart_toEndOf="@+id/Cart"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        tools:layout_editor_absoluteX="168dp" />
-
-    <Button
-        android:id="@+id/minueus"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text=""
-        android:background="FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
-        app:layout_constraintStart_toEndOf="@+id/plus"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.154" />
 
     <TextView
         android:id="@+id/textView5"
@@ -149,16 +97,47 @@
         android:layout_width="wrap_content"
         android:layout_height="73dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="0.00"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/ADD"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="0.00"
-        android:textSize="60dp"
-        app:layout_constraintBottom_toTopOf="@+id/plus"
+        android:background="@drawable/ic_add_circle_outline_black_24dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Cart"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <Button
+        android:id="@+id/Remove"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_remove_circle_outline_black_24dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toEndOf="@+id/ADD"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.177" />
 
 </android.support.constraint.ConstraintLayout>
