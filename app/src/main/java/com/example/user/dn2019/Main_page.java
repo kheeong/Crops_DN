@@ -15,14 +15,17 @@ import android.view.MenuItem;
 public class Main_page extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
-
+    NavigationView navView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
-
+        navView = (NavigationView) findViewById(R.id.navigation);
         configureNavigationDrawer();
         configureToolbar();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame, new RefreshFragment());
+        transaction.commit();
     }
 
     @Override
@@ -41,7 +44,7 @@ public class Main_page extends AppCompatActivity {
 
     private void configureNavigationDrawer() {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        NavigationView navView = (NavigationView) findViewById(R.id.navigation);
+
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
